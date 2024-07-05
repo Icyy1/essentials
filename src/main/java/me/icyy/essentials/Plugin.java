@@ -14,6 +14,8 @@ public class Plugin extends JavaPlugin
 
     this.getCommand("gmc").setExecutor(new gmc());
     this.getCommand("gms").setExecutor(new gms());
+    this.getCommand("gmsp").setExecutor(new gmsp());
+    this.getCommand("gma").setExecutor(new gma());
     this.getCommand("heal").setExecutor(new heal());
     this.getCommand("fly").setExecutor(new fly());
   }

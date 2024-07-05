@@ -12,11 +12,11 @@ public class gms implements CommandExecutor{
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {
             sender.sendMessage("You must be a player to use this command");
-            return false;
+            return true;
         }
         Player player = (Player) sender;
         player.setGameMode(GameMode.SURVIVAL);
         player.sendMessage("Gamemode set to Survival");
-        return false;
+        return true;
     }
 }

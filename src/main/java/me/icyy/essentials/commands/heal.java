@@ -11,12 +11,12 @@ public class heal implements CommandExecutor{
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {
             sender.sendMessage("You must be a player to use this command");
-            return false;
+            return true;
         }
         Player player = (Player) sender;
         player.setHealth(20);
         player.setFoodLevel(20);
-        player.sendMessage("You have been healed");
-        return false;
+        player.sendMessage("Your health and hunger have been replenished.");
+        return true;
     }
 }

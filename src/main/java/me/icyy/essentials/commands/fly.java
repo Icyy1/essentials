@@ -11,16 +11,16 @@ public class fly implements CommandExecutor{
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(!(sender instanceof Player)){
             sender.sendMessage("You must be a player to use this command");
-            return false;
+            return true;
         }
         Player player = (Player) sender;
-        if (player.isFlying()) {
+        if (player.getAllowFlight()) {
             player.setAllowFlight(false);
             player.sendMessage("Flight mode disabled");
-            return false;
+            return true;
         }
         player.setAllowFlight(true);
         player.sendMessage("Flight mode enabled");
-        return false;
+        return true;
     }
 }

@@ -6,7 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.GameMode;
 
-public class gmc implements CommandExecutor{
+public class gmsp implements CommandExecutor{
     
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -15,8 +15,8 @@ public class gmc implements CommandExecutor{
             return true;
         }
         Player player = (Player) sender;
-        player.setGameMode(GameMode.CREATIVE);
-        player.sendMessage("Gamemode set to Creative");
+        player.setGameMode(GameMode.SPECTATOR);
+        player.sendMessage("Gamemode set to Spectator");
         return true;
     }
 }

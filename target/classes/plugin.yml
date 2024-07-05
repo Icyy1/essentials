@@ -1,0 +1,18 @@
+name: essentials
+main: me.icyy.essentials.Plugin
+version: 1
+api-version: 1.15
+
+commands:
+  gmc:
+    description: Change your gamemode to creative
+    usage: /gmc
+  gms:
+    description: Change your gamemode to survival
+    usage: /gms
+  heal:
+    description: Replenish your health and hunger
+    usage: /heal
+  fly:
+    description: Enable or disable fly mode
+    usage: /fly
